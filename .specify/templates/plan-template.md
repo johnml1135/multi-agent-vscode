@@ -31,7 +31,11 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+1. **Isolation Proof** – Document how the feature keeps each agent sandboxed (files touched, tools enabled, teardown steps) or justify the exception in the Complexity Tracking table.
+2. **Deterministic Replay** – List pinned dependency versions, seeds, config files, and reproduction commands showing the same spec can run anywhere.
+3. **Transparent Simplicity** – Outline the minimum user steps plus the logs emitted at each step; confirm the plan removes rather than adds hidden automation.
+4. **Inner-Loop Safety & Performance** – Provide latency/throughput targets for commands touched by this feature and the measurements that prove they hold.
+5. **Observability & Ergonomics** – Describe how logs, correlation IDs, and user controls (pause/terminate) will remain per-agent when this feature ships.
 
 ## Project Structure
 
@@ -98,7 +102,7 @@ directories captured above]
 
 > **Fill ONLY if Constitution Check has violations that must be justified**
 
-| Violation | Why Needed | Simpler Alternative Rejected Because |
-|-----------|------------|-------------------------------------|
-| [e.g., 4th project] | [current need] | [why 3 projects insufficient] |
-| [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient] |
+| Violation                  | Why Needed         | Simpler Alternative Rejected Because |
+| -------------------------- | ------------------ | ------------------------------------ |
+| [e.g., 4th project]        | [current need]     | [why 3 projects insufficient]        |
+| [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient]  |

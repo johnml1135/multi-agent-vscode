@@ -113,3 +113,13 @@
 - **SC-002**: [Measurable metric, e.g., "System handles 1000 concurrent users without degradation"]
 - **SC-003**: [User satisfaction metric, e.g., "90% of users successfully complete primary task on first attempt"]
 - **SC-004**: [Business metric, e.g., "Reduce support tickets related to [X] by 50%"]
+
+## Constitution Alignment *(mandatory)*
+
+Summarize how this feature complies with every core principle. List explicit violations along with the mitigation or justification that reviewers must validate.
+
+- **Isolation-First Agents**: [Describe sandbox boundaries, tools used, teardown steps]
+- **Deterministic Execution & Reproducibility**: [List pinned versions, seeds, log replay instructions]
+- **Transparent Simplicity**: [Explain how commands, UX copy, and logs stay minimal and explicit]
+- **Inner-Loop Safety & Performance**: [State latency/throughput targets and measurement plans]
+- **Multi-Agent Observability & Ergonomics**: [Call out logging, correlation IDs, pause/terminate controls]

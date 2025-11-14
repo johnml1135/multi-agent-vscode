@@ -18,6 +18,13 @@ description: "Task list template for feature implementation"
 - **[Story]**: Which user story this task belongs to (e.g., US1, US2, US3)
 - Include exact file paths in descriptions
 
+## Constitution Guardrails *(apply to every task list)*
+
+- Call out sandbox boundaries whenever a task touches files, processes, or tools outside the default workspace.
+- Reference deterministic artifacts (pinned versions, seeds, recorded logs) in tasks that introduce or update dependencies.
+- Highlight performance-sensitive tasks with the latency/throughput budget they must uphold; add verification tasks if needed.
+- Tie observability or UX work back to per-agent logging, correlation IDs, and user controls (pause/terminate) so ergonomics stay auditable.
+
 ## Path Conventions
 
 - **Single project**: `src/`, `tests/` at repository root
